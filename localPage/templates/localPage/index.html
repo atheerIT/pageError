@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{% static 'localPage/styles.css' %}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heder">
+            <h1 class="htitle">
+                <strong>محتوى غير مسموح</strong>
+            </h1>
+        </div>
+        <div class="contant">
+            <img class="logo" src="{% static 'localPage/logo.jpg' %} " alt="logo.jpg">
+            <p class="message">
+            ان هذا العمل غير قانوني وسوف يعرضك للمسائلة القانونية بسبب المخاطر التي تسببها مثل هذه المواقع لما تحتويه من فايروسات ومالويرز لذا يرجى تجنب استخدامها
+            </p>
+            <table>
+                <tr>
+                    <th>IP عنوان</th>
+                    <th>اسم الحاسبة</th>
+                </tr>
+                <tr>
+                    <td>{{comName}}</td>
+                    <td>{{ip}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.container{
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+
+}
+.heder{
+    background-color: brown;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 75%;
+}
+.message{
+    font-family: Lucida Console;
+    font-weight: bold;
+    font-size: x-large;
+}
+.htitle{
+    font-size: xx-large;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
