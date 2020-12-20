@@ -6,6 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            fetch('http://10.1.0.126/info')
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data)
+            })
+            .catch(e=>{
+                console.log(e);
+            })
+        })
+    </script> 
+    
 </head>
 <body>
     <div class="container">
@@ -16,19 +29,14 @@
         </div>
         <div class="contant">
             <img class="logo" src="{% static 'localPage/logo.jpg' %} " alt="logo.jpg">
+            <p class="worn">
+                تم تحديد الموقع ضمن <strong class="strong">مديرية امن الاتصالات</strong> 
+                <br>
+                تم ارسال معلومات المستخدم الى الجهة المعنية
+            </p>
             <p class="message">
             ان هذا العمل غير قانوني وسوف يعرضك للمسائلة القانونية بسبب المخاطر التي تسببها مثل هذه المواقع لما تحتويه من فايروسات ومالويرز لذا يرجى تجنب استخدامها
             </p>
-            <table>
-                <tr>
-                    <th>IP عنوان</th>
-                    <th>اسم الحاسبة</th>
-                </tr>
-                <tr>
-                    <td>{{comName}}</td>
-                    <td>{{ip}}</td>
-                </tr>
-            </table>
         </div>
     </div>
 </body>
